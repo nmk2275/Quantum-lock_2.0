@@ -24,6 +24,9 @@ def keyrate():
 @app.route("/KeyrateVsDistance")
 def KeyrateVsDistance():
     return render_template("KeyrateVsDistance.html")
+@app.route("/QuantumVsClassicalSimulator")
+def QuantumVsClassicalSimulator():
+    return render_template("QuantumVsClassicalSimulator.html")
 
 # ---- Experiment routes ----
 @app.route("/run/exp1", methods=["POST"])
